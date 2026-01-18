@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Projesi — Başlangıç</title>
+  <meta name="description" content="Basit, responsive HTML başlangıç projesi." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">HtmlProje</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menüyü aç">☰</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#home">Anasayfa</a></li>
+          <li><a href="#features">Özellikler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Hoş geldiniz!</h1>
+        <p>Bu repo, hızlıca başlayabileceğiniz temiz ve responsive bir HTML şablonudur.</p>
+        <a class="btn" href="#contact">İletişime Geç</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Özellikler</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Basit</h3>
+          <p>Temiz ve anlaşılır HTML/CSS/JS yapısı.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Mobil ve masaüstünde düzgün görünüm sağlar.</p>
+        </article>
+        <article class="card">
+          <h3>Kolay Özelleştirme</h3>
+          <p>Renkleri, metinleri ve bölümleri kolayca değiştirebilirsiniz.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>İletişim</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          İsim
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          E-posta
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Mesaj
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Gönder</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> HtmlProje — Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
